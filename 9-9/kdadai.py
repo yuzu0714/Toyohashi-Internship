@@ -15,7 +15,7 @@ def text2words_filtered(text):
     words = []
     for token in tokens:
         pos_info = token.part_of_speech.split(',')
-        pos    = pos_info[0]    #品詞
+        pos    = pos_info[0]    
         subpos = pos_info[1]
         base   = token.base_form
 
