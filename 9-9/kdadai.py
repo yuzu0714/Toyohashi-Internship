@@ -90,8 +90,7 @@ vocab = texts2vocab(train_sentences) # 分詞、sort、辞書を作る
 train_sentence_bows = texts2bows(vocab, train_sentences) # 18000個のbowリストを得る
 test_sentence_bows = texts2bows(vocab, test_sentences)
 
-#確認する
 print(f"Vocabulary size:       {len(vocab)}")
 print(f"Train BoW count:       {len(train_sentence_bows)}")
 print(f"Test  BoW count:       {len(test_sentence_bows)}")
-print(f"Train BoW[0] (first 20): {train_sentence_bows[0][:20]}")
+print(f"Train BoW[0] (first 20): {train_sentence_bows[0][:20]}") #最初の一文の、BoWベクトルに変換した結果の最初20個の要素
